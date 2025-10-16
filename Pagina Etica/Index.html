@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución de los Lenguajes de Programación - Blog ISC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                        <h1>CodeEvolution</h1>
+                        <p class="tagline">Blog de Ingeniería en Sistemas</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="#articulos"><i class="fas fa-newspaper"></i> Artículos</a></li>
+                        <li><a href="#timeline"><i class="fas fa-history"></i> Timeline</a></li>
+                        <li><a href="#recursos"><i class="fas fa-book"></i> Recursos</a></li>
+                        <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>La Evolución de los Lenguajes de Programación</h2>
+                <p>Del código máquina a la inteligencia artificial: Un recorrido por 70 años de historia computacional</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number">70+</span>
+                        <span class="label">Años de Evolución</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">250+</span>
+                        <span class="label">Lenguajes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">5</span>
+                        <span class="label">Generaciones</span>
+                    </div>
+                </div>
+                <a href="#timeline" class="btn"><i class="fas fa-play"></i> Explorar la Evolución</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <h2 class="section-title">Artículos Destacados</h2>
+            <div class="articles-grid">
+                <article class="article-card featured">
+                    <div class="article-badge">Destacado</div>
+                    <div class="article-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'><rect width='400' height='200' fill='%231a2a6c'/><text x='200' y='100' font-family='Arial' font-size='24' fill='white' text-anchor='middle'>Python Domina 2024</text></svg>" alt="Python">
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://www.tiobe.com/tiobe-index/" target="_blank">Por qué Python Sigue Dominando en 2024: Análisis del Índice TIOBE</a></h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 20 Nov, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min lectura</span>
+                            <span><i class="far fa-eye"></i> 2.4K vistas</span>
+                        </div>
+                        <p>Python mantiene su posición como el lenguaje más popular según el índice TIOBE, superando a Java y C. Exploramos las razones detrás de su dominio continuo...</p>
+                        <div class="article-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TIOBE</span>
+                            <span class="tag">Tendencias</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'><rect width='400' height='200' fill='%232a3a7c'/><text x='200' y='100' font-family='Arial' font-size='24' fill='white' text-anchor='middle'>Rust vs Go</text></svg>" alt="Rust vs Go">
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://blog.logrocket.com/rust-vs-go-how-to-choose-the-right-language-for-your-project/" target="_blank">Rust vs Go: ¿Cuál Elegir para tu Próximo Proyecto en 2024?</a></h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 15 Nov, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min lectura</span>
+                            <span><i class="far fa-eye"></i> 1.8K vistas</span>
+                        </div>
+                        <p>Comparativa técnica entre Rust y Go: rendimiento, seguridad, ecosistema y casos de uso ideales para cada lenguaje en el desarrollo moderno...</p>
+                        <div class="article-tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">Go</span>
+                            <span class="tag">Comparativa</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'><rect width='400' height='200' fill='%233a4a8c'/><text x='200' y='100' font-family='Arial' font-size='24' fill='white' text-anchor='middle'>WebAssembly</text></svg>" alt="WebAssembly">
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://developer.mozilla.org/en-US/docs/WebAssembly" target="_blank">WebAssembly: El Futuro del Desarrollo Web Más Allá de JavaScript</a></h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 10 Nov, 2024</span>
+                            <span><i class="far fa-clock"></i> 10 min lectura</span>
+                            <span><i class="far fa-eye"></i> 1.2K vistas</span>
+                        </div>
+                        <p>WebAssembly está revolucionando cómo construimos aplicaciones web. Descubre cómo ejecutar código de alto rendimiento en el navegador...</p>
+                        <div class="article-tags">
+                            <span class="tag">WebAssembly</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Web</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Left Column: Blog Posts -->
+            <div class="left-column">
+                <!-- Timeline -->
+                <section class="timeline" id="timeline">
+                    <h2 class="section-title">Línea de Tiempo de la Evolución</h2>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">1940s</div>
+                        <div class="timeline-content">
+                            <h3>Lenguaje Máquina</h3>
+                            <p>Código binario puro - la forma más básica de comunicación con el hardware.</p>
+                            <div class="code-example">
+                                <span class="code-comment">; Ejemplo de código máquina (binario)</span><br>
+                                01001000 01100101 01101100 01101100 01101111
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">1950s</div>
+                        <div class="timeline-content">
+                            <h3>Lenguajes Ensamblador</h3>
+                            <p>Primera abstracción usando mnemotécnicos para representar instrucciones.</p>
+                            <div class="code-example">
+                                <span class="code-comment">; Ejemplo de Assembly x86</span><br>
+                                MOV AX, 05h<br>
+                                MOV BX, 02h<br>
+                                ADD AX, BX
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">1957-1960</div>
+                        <div class="timeline-content">
+                            <h3>Primeros Lenguajes de Alto Nivel</h3>
+                            <p>FORTRAN (1957) para computación científica y COBOL (1959) para negocios.</p>
+                            <div class="code-example">
+                                <span class="code-comment">C Ejemplo FORTRAN</span><br>
+                                <span class="code-keyword">PROGRAM</span> HELLO<br>
+                                <span class="code-keyword">PRINT</span> *, "Hello World"<br>
+                                <span class="code-keyword">END PROGRAM</span> HELLO
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">1972</div>
+                        <div class="timeline-content">
+                            <h3>Nacimiento de C</h3>
+                            <p>Desarrollado por Dennis Ritchie en Bell Labs, se convirtió en el lenguaje de sistemas por excelencia.</p>
+                            <div class="code-example">
+                                <span class="code-comment">// Ejemplo en C</span><br>
+                                <span class="code-keyword">#include</span> &lt;stdio.h&gt;<br>
+                                <span class="code-keyword">int</span> <span class="code-function">main</span>() {<br>
+                                &nbsp;&nbsp;printf(<span class="code-string">"Hello, World!\n"</span>);<br>
+                                &nbsp;&nbsp;<span class="code-keyword">return</span> 0;<br>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">1995</div>
+                        <div class="timeline-content">
+                            <h3>Java y JavaScript</h3>
+                            <p>Java revoluciona con "write once, run anywhere". JavaScript nace para la web.</p>
+                            <div class="code-example">
+                                <span class="code-comment">// Ejemplo Java</span><br>
+                                <span class="code-keyword">public class</span> HelloWorld {<br>
+                                &nbsp;&nbsp;<span class="code-keyword">public static void</span> <span class="code-function">main</span>(String[] args) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="code-string">"Hello World"</span>);<br>
+                                &nbsp;&nbsp;}<br>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2000s</div>
+                        <div class="timeline-content">
+                            <h3>Lenguajes Modernos</h3>
+                            <p>Python, C#, Ruby y otros enfocados en productividad y expresividad.</p>
+                            <div class="code-example">
+                                <span class="code-comment"># Ejemplo Python</span><br>
+                                <span class="code-keyword">def</span> <span class="code-function">hello_world</span>():<br>
+                                &nbsp;&nbsp;print(<span class="code-string">"Hello, World!"</span>)<br><br>
+                                hello_world()
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2010-Presente</div>
+                        <div class="timeline-content">
+                            <h3>Era de la Especialización</h3>
+                            <p>Go, Rust, Swift, Kotlin y TypeScript - cada uno optimizado para casos específicos.</p>
+                            <div class="code-example">
+                                <span class="code-comment">// Ejemplo Rust</span><br>
+                                <span class="code-keyword">fn</span> <span class="code-function">main</span>() {<br>
+                                &nbsp;&nbsp;println!(<span class="code-string">"Hello, World!"</span>);<br>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Articles -->
+                <section class="recent-articles" id="articulos">
+                    <h2 class="section-title">Artículos Recientes</h2>
+                    
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <h2><a href="https://www.freecodecamp.org/news/typescript-vs-javascript-whats-the-difference-and-why-should-you-care/" target="_blank">TypeScript vs JavaScript: ¿Vale la pena el Tipo Extra?</a></h2>
+                            <div class="post-meta">
+                                <span><i class="far fa-user"></i> Jose Ricardo</span>
+                                <span><i class="far fa-calendar"></i> 18 Nov, 2024</span>
+                                <span><i class="far fa-comments"></i> 24 comentarios</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>TypeScript ha ganado popularidad masiva en los últimos años, pero ¿realmente justifica la curva de aprendizaje y la complejidad adicional? Analizamos casos reales de migración y el impacto en la productividad del equipo.</p>
+                            
+                            <h3>Ventajas Clave de TypeScript</h3>
+                            <ul>
+                                <li>Detección de errores en tiempo de compilación</li>
+                                <li>Mejor autocompletado y documentación automática</li>
+                                <li>Refactoring más seguro</li>
+                                <li>Mejor experiencia en equipos grandes</li>
+                            </ul>
+                            
+                            <div class="code-example">
+                                <span class="code-comment">// TypeScript vs JavaScript</span><br>
+                                <span class="code-comment">// JavaScript</span><br>
+                                <span class="code-keyword">function</span> <span class="code-function">add</span>(a, b) {<br>
+                                &nbsp;&nbsp;<span class="code-keyword">return</span> a + b;<br>
+                                }<br><br>
+                                <span class="code-comment">// TypeScript</span><br>
+                                <span class="code-keyword">function</span> <span class="code-function">add</span>(a: <span class="code-keyword">number</span>, b: <span class="code-keyword">number</span>): <span class="code-keyword">number</span> {<br>
+                                &nbsp;&nbsp;<span class="code-keyword">return</span> a + b;<br>
+                                }
+                            </div>
+                            
+                            <div class="post-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Web Development</span>
+                            </div>
+                            <a href="https://www.freecodecamp.org/news/typescript-vs-javascript-whats-the-difference-and-why-should-you-care/" target="_blank" class="btn read-more">Leer artículo completo</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <h2><a href="https://www.rust-lang.org/what/embedded" target="_blank">El Ascenso de Rust: Por qué Grandes Empresas lo Adoptan</a></h2>
+                            <div class="post-meta">
+                                <span><i class="far fa-user"></i> Jose Ricardo</span>
+                                <span><i class="far fa-calendar"></i> 12 Nov, 2024</span>
+                                <span><i class="far fa-comments"></i> 31 comentarios</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Rust ha sido votado como el lenguaje "más amado" en las encuestas de Stack Overflow durante 7 años consecutivos. Empresas como Microsoft, Google y Amazon lo están adoptando para sistemas críticos.</p>
+                            
+                            <h3>Casos de Éxito Empresarial</h3>
+                            <div class="success-cases">
+                                <div class="case">
+                                    <h4>Microsoft</h4>
+                                    <p>Reescribiendo componentes de Windows en Rust para mejorar la seguridad</p>
+                                </div>
+                                <div class="case">
+                                    <h4>Google</h4>
+                                    <p>Usando Rust en Android para memory safety</p>
+                                </div>
+                                <div class="case">
+                                    <h4>Amazon</h4>
+                                    <p>Implementando servicios de AWS con Rust para mejor performance</p>
+                                </div>
+                            </div>
+                            
+                            <blockquote>
+                                "Rust representa el futuro de la programación de sistemas. Su sistema de ownership elimina entire classes of bugs."
+                                <cite>- Jose Ricardo, Engineer en Mozilla</cite>
+                            </blockquote>
+                            <a href="https://www.rust-lang.org/what/embedded" target="_blank" class="btn read-more">Leer artículo completo</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <h2><a href="https://realpython.com/python-data-science/" target="_blank">Python en Ciencia de Datos: ¿Sigue Siendo el Rey?</a></h2>
+                            <div class="post-meta">
+                                <span><i class="far fa-user"></i> Jose Ricardo</span>
+                                <span><i class="far fa-calendar"></i> 5 Nov, 2024</span>
+                                <span><i class="far fa-comments"></i> 18 comentarios</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Con la aparición de nuevos lenguajes como Julia diseñados específicamente para computación científica, ¿sigue Python siendo la mejor opción para ciencia de datos y machine learning?</p>
+                            
+                            <h3>Comparativa de Rendimiento</h3>
+                            <div class="performance-comparison">
+                                <div class="language-perf">
+                                    <h4>Python</h4>
+                                    <div class="perf-bar">
+                                        <div class="perf-fill" style="width: 85%">85%</div>
+                                    </div>
+                                    <span>Productividad</span>
+                                </div>
+                                <div class="language-perf">
+                                    <h4>Julia</h4>
+                                    <div class="perf-bar">
+                                        <div class="perf-fill" style="width: 95%">95%</div>
+                                    </div>
+                                    <span>Rendimiento</span>
+                                </div>
+                                <div class="language-perf">
+                                    <h4>R</h4>
+                                    <div class="perf-bar">
+                                        <div class="perf-fill" style="width: 75%">75%</div>
+                                    </div>
+                                    <span>Estadística</span>
+                                </div>
+                            </div>
+                            
+                            <div class="code-example">
+                                <span class="code-comment"># Python - Análisis de datos con Pandas</span><br>
+                                <span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd<br>
+                                <span class="code-keyword">import</span> matplotlib.pyplot <span class="code-keyword">as</span> plt<br><br>
+                                data = pd.read_csv(<span class="code-string">'datos.csv'</span>)<br>
+                                data.groupby(<span class="code-string">'categoria'</span>).mean().plot(kind=<span class="code-string">'bar'</span>)<br>
+                                plt.show()
+                            </div>
+                            <a href="https://realpython.com/python-data-science/" target="_blank" class="btn read-more">Leer artículo completo</a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-widget about-widget">
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2364b5f6'/><text x='50' y='55' font-family='Arial' font-size='16' fill='white' text-anchor='middle'>JR</text></svg>" alt="Jose Ricardo">
+                        </div>
+                        <h3>Jose Ricardo</h3>
+                        <p>Estudiante de Ingeniería en Sistemas Computacionales. Apasionado por el desarrollo de software y la evolución tecnológica.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-fire"></i> Trending Topics</h3>
+                    <ul class="popular-posts">
+                        <li>
+                            <span class="trend-number">1</span>
+                            <div>
+                                <a href="https://www.kaggle.com/learn" target="_blank">Machine Learning con Python</a>
+                                <span class="post-meta">1.2K vistas</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-number">2</span>
+                            <div>
+                                <a href="https://ethereum.org/en/developers/docs/smart-contracts/" target="_blank">Web3 y Smart Contracts</a>
+                                <span class="post-meta">980 vistas</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-number">3</span>
+                            <div>
+                                <a href="https://kubernetes.io/docs/home/" target="_blank">DevOps con Kubernetes</a>
+                                <span class="post-meta">850 vistas</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-number">4</span>
+                            <div>
+                                <a href="https://vuejs.org/guide/introduction.html" target="_blank">React vs Vue 2024</a>
+                                <span class="post-meta">720 vistas</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-tags"></i> Nube de Tags</h3>
+                    <div class="tags-cloud">
+                        <span class="tag tag-lg">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag tag-lg">Rust</span>
+                        <span class="tag">Go</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">WebAssembly</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Cloud</span>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget newsletter-widget">
+                    <h3><i class="fas fa-envelope"></i> Newsletter</h3>
+                    <p>Suscríbete para recibir los últimos artículos sobre programación y tecnología.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-history"></i> Archivo</h3>
+                    <ul class="archive-list">
+                        <li><a href="#">Noviembre 2024 <span class="count">(8)</span></a></li>
+                        <li><a href="#">Octubre 2024 <span class="count">(12)</span></a></li>
+                        <li><a href="#">Septiembre 2024 <span class="count">(10)</span></a></li>
+                        <li><a href="#">Agosto 2024 <span class="count">(9)</span></a></li>
+                        <li><a href="#">Julio 2024 <span class="count">(7)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <section class="resources" id="recursos">
+        <div class="container">
+            <h2 class="section-title">Recursos para Desarrolladores</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Documentación Oficial</h3>
+                    <p>Enlaces a la documentación oficial de los lenguajes más populares.</p>
+                    <a href="https://devdocs.io/" target="_blank" class="resource-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Playgrounds Online</h3>
+                    <p>Ejecuta código en diferentes lenguajes directamente desde el navegador.</p>
+                    <a href="https://replit.com/" target="_blank" class="resource-link">Probar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Cursos Gratuitos</h3>
+                    <p>Recopilación de los mejores cursos online para aprender programación.</p>
+                    <a href="https://www.freecodecamp.org/" target="_blank" class="resource-link">Aprender <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Herramientas Dev</h3>
+                    <p>IDE, editores y herramientas esenciales para el desarrollo.</p>
+                    <a href="https://code.visualstudio.com/" target="_blank" class="resource-link">Descubrir <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CodeEvolution</h3>
+                    <p>Blog especializado en la evolución de lenguajes de programación y tecnologías emergentes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Secciones</h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#articulos">Artículos</a>
+                    <a href="#timeline">Timeline</a>
+                    <a href="#recursos">Recursos</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Lenguajes</h3>
+                    <a href="https://www.python.org/" target="_blank">Python</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                    <a href="https://www.rust-lang.org/" target="_blank">Rust</a>
+                    <a href="https://go.dev/" target="_blank">Go</a>
+                    <a href="https://www.java.com/" target="_blank">Java</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> jose.ricardo@codeevolution.blog</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Unidad Academica Multidisciplinaria Mante, UAMM</p>
+                    <p><i class="fas fa-clock"></i> Publicaciones semanales</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 CodeEvolution - Blog de Jose Ricardo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para los enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simular búsqueda
+        document.querySelector('.search-box button').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-box input').value;
+            if (searchTerm) {
+                alert(`Buscando: ${searchTerm}`);
+            }
+        });
+
+        // Newsletter subscription
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`¡Gracias por suscribirte con: ${email}!`);
+            this.reset();
+        });
+
+        // Efecto de contador en las estadísticas
+        function animateCounter(element, target, duration) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start);
+                }
+            }, 16);
+        }
+
+        // Animar contadores cuando son visibles
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const stats = entry.target.querySelectorAll('.number');
+                    animateCounter(stats[0], 70, 2000);
+                    animateCounter(stats[1], 250, 2000);
+                    animateCounter(stats[2], 5, 1000);
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.hero-stats'));
+    </script>
+</body>
+</html>
